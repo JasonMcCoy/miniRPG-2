@@ -85,18 +85,18 @@ class ViewController: UIViewController {
         restartGame()
     }
     
-    func attemptAttack(_ player: Character, enemy: Character) {
-        enemy.attemptAtk(player.attackPwr)
-        updatePlayersHp()
+    func attemptAttack(_ plyr: Character, enemy: Character) {
+        enemy.attemptAtk(plyr.attackPwr)
+        updatePlyrHp()
         if enemy.isDead() {
-            displayLbl.text = "\(player.name) HAS WON THE BATTLE!"
+            displayLbl.text = "\(plyr.name) HAS WON THE BATTLE!"
             endGame()
         } else {
-            displayLbl.text = "\(player.name) hits \(enemy.name) for \(player.attackPwr) HP."
+            displayLbl.text = "\(plyr.name) hits \(enemy.name) for \(plyr.attackPwr) HP."
         }
     }
     
-    func updatePlayersHp() {
+    func updatePlyrHp() {
         if let firstPlyr = game?.firstPlyr, secondPlyr = game?.secondPlyr {
             firstPlyrHpLbl.text = "\(firstPlyr.hp) HP"
             secondPlyrHpLbl.text = "\(secondPlyr.hp) HP"
@@ -135,7 +135,7 @@ class ViewController: UIViewController {
         if let currentGame = game {
             if let firstPlyr = currentGame.firstPlyr {
                 let isGrunt = firstPlyr is Grunt
-                updatePlayerImage(firstPlyrImage, isGrunt: isGrunt)
+                updateplyrImage(firstPlyrImage, isGrunt: isGrunt)
                 if !isGrunt {
                     firstPlyrImage.transform = CGAffineTransform(scaleX: -1, y: 1)
                 }
@@ -143,13 +143,13 @@ class ViewController: UIViewController {
             }
             if let secondPlyr = currentGame.secondPlyr {
                 let isGrunt = secondPlyr is Grunt
-                updatePlayerImage(secondPlyrImage, isGrunt: isGrunt)
+                updateplyrImage(secondPlyrImage, isGrunt: isGrunt)
                 if isGrunt {
                     secondPlyrImage.transform = CGAffineTransform(scaleX: -1, y: 1)
                 }
             }
             currentGame.start()
-            updatePlayersHp()
+            updatePlyrHp()
             displayLbl.text = "FIGHT!"
             firstPlyrBtnLbl.text = "ATTACK"
             secondPlyrBtnLbl.text = "ATTACK"
@@ -168,7 +168,7 @@ class ViewController: UIViewController {
         firstPlyrBtn.isEnabled = true
         firstPlyrBtnLbl.text = "GRUNT"
         firstPlyrHpLbl.text = "110 HP"
-        updatePlayerImage(firstPlyrImage, isGrunt: true)
+        updateplyrImage(firstPlyrImage, isGrunt: true)
         firstPlyrImage.transform = CGAffineTransform.identity
         
         
@@ -177,12 +177,12 @@ class ViewController: UIViewController {
         secondPlyrBtn.isEnabled = true
         secondPlyrBtnLbl.text = "SPARTAN"
         secondPlyrHpLbl.text = "100 HP"
-        updatePlayerImage(secondPlyrImage, isGrunt: false)
+        updateplyrImage(secondPlyrImage, isGrunt: false)
         secondPlyrImage.transform = CGAffineTransform.identity
         
     }
     
-    func updatePlayerImage(_ img: UIImageView, isGrunt: Bool) {
+    func updateplyrImage(_ img: UIImageView, isGrunt: Bool) {
         if isGrunt {
             img.image = UIImage(named: "Enemy")
         } else {
