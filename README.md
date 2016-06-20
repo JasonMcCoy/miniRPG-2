@@ -7,11 +7,7 @@ The point of the game is to simply press the attack button to kill the opponent 
 This is a two player game, so each character should have an attack button and when one player attacks, the other player/button is disabled for 3 seconds before they can attack. If a player dies, the screen should print who won and when the game ends, an option to restart the game will be available.
 
 
-Here is what the final game looks like:
-![alt tag]()
-
-
-Lookin' good so far eh? Here is what my final xcode setup looks like:
+Here is what my final xcode setup looks like:
 ![alt tag](http://mccoygames.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-20-at-7.54.23-AM.png)
 
 
