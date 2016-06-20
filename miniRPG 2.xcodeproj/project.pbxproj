@@ -12,6 +12,11 @@
 		13CB777D1D1478870016FB4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13CB777B1D1478870016FB4B /* Main.storyboard */; };
 		13CB777F1D1478870016FB4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13CB777E1D1478870016FB4B /* Assets.xcassets */; };
 		13CB77821D1478870016FB4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13CB77801D1478870016FB4B /* LaunchScreen.storyboard */; };
+		13CB778A1D17848F0016FB4B /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CB77891D17848F0016FB4B /* Character.swift */; };
+		13CB77901D1784AC0016FB4B /* Grunt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CB778F1D1784AC0016FB4B /* Grunt.swift */; };
+		13CB77921D1784B20016FB4B /* Spartan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CB77911D1784B20016FB4B /* Spartan.swift */; };
+		13CB77941D178DD60016FB4B /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CB77931D178DD60016FB4B /* Game.swift */; };
+		13CB77961D178DE30016FB4B /* RaceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CB77951D178DE30016FB4B /* RaceType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		13CB777E1D1478870016FB4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13CB77811D1478870016FB4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13CB77831D1478870016FB4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13CB77891D17848F0016FB4B /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		13CB778F1D1784AC0016FB4B /* Grunt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grunt.swift; sourceTree = "<group>"; };
+		13CB77911D1784B20016FB4B /* Spartan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spartan.swift; sourceTree = "<group>"; };
+		13CB77931D178DD60016FB4B /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		13CB77951D178DE30016FB4B /* RaceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaceType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,11 @@
 				13CB777E1D1478870016FB4B /* Assets.xcassets */,
 				13CB77801D1478870016FB4B /* LaunchScreen.storyboard */,
 				13CB77831D1478870016FB4B /* Info.plist */,
+				13CB77951D178DE30016FB4B /* RaceType.swift */,
+				13CB77931D178DD60016FB4B /* Game.swift */,
+				13CB77891D17848F0016FB4B /* Character.swift */,
+				13CB77911D1784B20016FB4B /* Spartan.swift */,
+				13CB778F1D1784AC0016FB4B /* Grunt.swift */,
 			);
 			path = "miniRPG 2";
 			sourceTree = "<group>";
@@ -138,8 +153,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13CB77901D1784AC0016FB4B /* Grunt.swift in Sources */,
+				13CB77941D178DD60016FB4B /* Game.swift in Sources */,
+				13CB778A1D17848F0016FB4B /* Character.swift in Sources */,
+				13CB77921D1784B20016FB4B /* Spartan.swift in Sources */,
 				13CB777A1D1478870016FB4B /* ViewController.swift in Sources */,
 				13CB77781D1478870016FB4B /* AppDelegate.swift in Sources */,
+				13CB77961D178DE30016FB4B /* RaceType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
