@@ -184,9 +184,9 @@ class ViewController: UIViewController {
     
     func updateplyrImage(_ img: UIImageView, isGrunt: Bool) {
         if isGrunt {
-            img.image = UIImage(named: "Enemy")
+            img.image = UIImage(named: "enemy")
         } else {
-            img.image = UIImage(named: "Player")
+            img.image = UIImage(named: "playeerr")
         }
     }
     
