@@ -7,16 +7,26 @@ The point of the game is to simply press the attack button to kill the opponent 
 This is a two player game, so each character should have an attack button and when one player attacks, the other player/button is disabled for 3 seconds before they can attack. If a player dies, the screen should print who won and when the game ends, an option to restart the game will be available.
 
 
-Lets see what the app looks like in the beginning...
-![alt tag](http://mccoygames.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-17-at-12.59.33-PM.png)
+Here is what the final game looks like:
+![alt tag]()
 
 
-Lookin' good so far eh? Here is what xcode looks like:
-![alt tag](http://mccoygames.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-17-at-1.01.05-PM.png)
+Lookin' good so far eh? Here is what my final xcode setup looks like:
+![alt tag](http://mccoygames.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-20-at-7.54.23-AM.png)
 
 
+Upon initial launch of the app, you will be asked to choose "Player 1".
+![alt tag](http://mccoygames.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-20-at-8.09.17-AM.png)
 
-I will continue to update this as I continue to finish the app.
+And for "Player 2" as well.. In this scenario, I chose "Player 1" as Grunt and "Player 2" as Spartan.
+![alt tag](http://mccoygames.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-20-at-8.09.24-AM.png)
+
+You are hereby granted permission to FIGHT!
+![alt tag](http://mccoygames.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-20-at-8.09.30-AM.png)
+
+To fight you press the "Attack" button to slowly drain eachothers HP. Once the battles over, you can do it all over again.
+![alt tag](http://mccoygames.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-20-at-8.09.53-AM.png)
+
 
 
 All Photo(s) by Jason McCoy / CC BY
