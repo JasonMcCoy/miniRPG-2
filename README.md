@@ -17,3 +17,7 @@ Lookin' good so far eh? Here is what xcode looks like:
 
 
 I will continue to update this as I continue to finish the app.
+
+
+All Photo(s) by Jason McCoy / CC BY
+http://creativecommons.org/licenses/by/2.0/
