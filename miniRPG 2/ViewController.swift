@@ -51,7 +51,7 @@ class ViewController: UIViewController {
                     Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ViewController.enableSecondPlyr), userInfo: nil, repeats: false)
                 }
                 
-                if let firstPlyr = currentGame.firstPlyr, secondPlyr = currentGame.secondPlyr {
+                if let firstPlyr = currentGame.firstPlyr, let secondPlyr = currentGame.secondPlyr {
                     attemptAttack(firstPlyr,  enemy: secondPlyr)
                 }
             }
@@ -74,7 +74,7 @@ class ViewController: UIViewController {
                     Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(ViewController.enableFirstPlyr), userInfo: nil, repeats: false)
                 }
                 
-                if let firstPlyr = currentGame.firstPlyr, secondPlyr = currentGame.secondPlyr {
+                if let firstPlyr = currentGame.firstPlyr, let secondPlyr = currentGame.secondPlyr {
                     attemptAttack(secondPlyr,  enemy: firstPlyr)
                 }
             }
@@ -97,7 +97,7 @@ class ViewController: UIViewController {
     }
     
     func updatePlyrHp() {
-        if let firstPlyr = game?.firstPlyr, secondPlyr = game?.secondPlyr {
+        if let firstPlyr = game?.firstPlyr, let secondPlyr = game?.secondPlyr {
             firstPlyrHpLbl.text = "\(firstPlyr.hp) HP"
             secondPlyrHpLbl.text = "\(secondPlyr.hp) HP"
         }
