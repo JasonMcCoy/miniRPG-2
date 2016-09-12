@@ -18,9 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="nvh-bK-A9I" userLabel="bg">
-                                <frame key="frameInset" minY="-263" width="1024" height="677"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bg_bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="nvh-bK-A9I" userLabel="bg">
+                                <frame key="frameInset" width="736" height="414"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_bridge" translatesAutoresizingMaskIntoConstraints="NO" id="3bX-Ig-5us">
                                 <frame key="frameInset" minX="-4" minY="286" width="198" height="128"/>
@@ -170,6 +169,10 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nvh-bK-A9I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nDi-0L-r8o"/>
+                            <constraint firstItem="nvh-bK-A9I" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nrr-Zm-V8t"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="displayLbl" destination="wvt-xE-IxR" id="7EX-YI-ee3"/>
@@ -187,7 +190,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.28185907046478" y="138.40000000000001"/>
+            <point key="canvasLocation" x="136.14130434782609" y="137.68115942028987"/>
         </scene>
     </scenes>
     <resources>
