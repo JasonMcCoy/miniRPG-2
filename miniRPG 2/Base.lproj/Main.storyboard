@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,40 +19,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bg_bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="nvh-bK-A9I" userLabel="bg">
-                                <frame key="frameInset" width="736" height="414"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="nvh-bK-A9I" userLabel="bg">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="414" id="bOf-47-Y99"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="414" id="jk3-7n-dFh"/>
                                     <constraint firstAttribute="width" constant="736" id="u1a-DT-L4t"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="736" id="zks-yA-eWE"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="-16" translatesAutoresizingMaskIntoConstraints="NO" id="jbG-fi-6sg">
-                                <frame key="frameInset" minX="-4" minY="286" width="744" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="-16" translatesAutoresizingMaskIntoConstraints="NO" id="jbG-fi-6sg">
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bg_bridge" translatesAutoresizingMaskIntoConstraints="NO" id="3bX-Ig-5us">
-                                        <frame key="frameInset" width="198" height="128"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_bridge" translatesAutoresizingMaskIntoConstraints="NO" id="3bX-Ig-5us">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="128" id="DOP-0J-ce5"/>
                                             <constraint firstAttribute="width" constant="198" id="hz0-Zv-sZh"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bg_bridge" translatesAutoresizingMaskIntoConstraints="NO" id="ZtJ-Yh-f2w">
-                                        <frame key="frameInset" minX="182" width="198" height="128"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_bridge" translatesAutoresizingMaskIntoConstraints="NO" id="ZtJ-Yh-f2w">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="128" id="7Xw-IY-Dj3"/>
                                             <constraint firstAttribute="width" constant="198" id="yCB-9M-rzK"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bg_bridge" translatesAutoresizingMaskIntoConstraints="NO" id="rC4-OS-Gro">
-                                        <frame key="frameInset" minX="364" width="198" height="128"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_bridge" translatesAutoresizingMaskIntoConstraints="NO" id="rC4-OS-Gro">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="198" id="FGq-xW-8eM"/>
                                             <constraint firstAttribute="height" constant="128" id="UcC-LE-78J"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bg_bridge" translatesAutoresizingMaskIntoConstraints="NO" id="zOR-au-gy9">
-                                        <frame key="frameInset" minX="546" width="198" height="128"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_bridge" translatesAutoresizingMaskIntoConstraints="NO" id="zOR-au-gy9">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="198" id="3F7-yg-xtK"/>
                                             <constraint firstAttribute="height" constant="128" id="gUs-vv-qr3"/>
@@ -59,43 +55,35 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="playeerr" translatesAutoresizingMaskIntoConstraints="NO" id="0nB-LW-Llr" userLabel="second player image">
-                                <frame key="frameInset" minX="482" minY="188" width="184" height="199"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="playeerr" translatesAutoresizingMaskIntoConstraints="NO" id="0nB-LW-Llr" userLabel="second player image">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="199" id="d1S-r6-RnN"/>
                                     <constraint firstAttribute="width" constant="184" id="gRi-jM-cGk"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lYD-gJ-SdZ">
-                                <frame key="frameInset" minX="5" minY="202" width="272" height="193"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lYD-gJ-SdZ">
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="Wyb-0b-AeJ">
-                                        <frame key="frameInset" width="272" height="193"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="Wyb-0b-AeJ">
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="enemy" translatesAutoresizingMaskIntoConstraints="NO" id="FBz-0j-Ism" userLabel="first player image 4">
-                                                <frame key="frameInset" minY="163" width="21" height="30"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enemy" translatesAutoresizingMaskIntoConstraints="NO" id="FBz-0j-Ism" userLabel="first player image 4">
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="21" id="avB-e8-hHS"/>
                                                     <constraint firstAttribute="height" constant="30" id="sTY-Si-slV"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="enemy" translatesAutoresizingMaskIntoConstraints="NO" id="HwB-yG-FUM" userLabel="first player image 3">
-                                                <frame key="frameInset" minX="21" minY="83" width="79" height="110"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enemy" translatesAutoresizingMaskIntoConstraints="NO" id="HwB-yG-FUM" userLabel="first player image 3">
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="79" id="Qkk-10-JDB"/>
                                                     <constraint firstAttribute="height" constant="110" id="Yjz-vK-1R2"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="enemy" translatesAutoresizingMaskIntoConstraints="NO" id="qoU-PQ-IS5" userLabel="first player image 2">
-                                                <frame key="frameInset" minX="100" minY="150" width="31" height="43"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enemy" translatesAutoresizingMaskIntoConstraints="NO" id="qoU-PQ-IS5" userLabel="first player image 2">
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="43" id="gwt-F6-yny"/>
                                                     <constraint firstAttribute="width" constant="31" id="kh1-fY-1MO"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="enemy" translatesAutoresizingMaskIntoConstraints="NO" id="yah-BZ-owS" userLabel="first player image">
-                                                <frame key="frameInset" minX="131" width="141" height="193"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enemy" translatesAutoresizingMaskIntoConstraints="NO" id="yah-BZ-owS" userLabel="first player image">
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="193" id="Ran-D7-JF5"/>
                                                     <constraint firstAttribute="width" constant="141" id="Y3Q-j5-6IA"/>
@@ -105,19 +93,15 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="cYJ-A1-4do">
-                                <frame key="frameInset" minX="250" minY="265" width="198" height="82"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="cYJ-A1-4do">
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="rX6-0K-NUH" userLabel="water_trolls">
-                                        <frame key="frameInset" width="69" height="44"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="rX6-0K-NUH" userLabel="water_trolls">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="69" id="f6W-LP-IiR"/>
                                             <constraint firstAttribute="height" constant="44" id="rdY-Rx-fjr"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="Pgl-ta-Ahg">
-                                        <frame key="frameInset" minX="69" width="129" height="82"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="Pgl-ta-Ahg">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="129" id="5DJ-Rf-JXE"/>
                                             <constraint firstAttribute="height" constant="82" id="hw9-mH-BeF"/>
@@ -125,15 +109,11 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="956-q2-5bs">
-                                <frame key="frameInset" minX="128" minY="122" width="386" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="956-q2-5bs">
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="-40" translatesAutoresizingMaskIntoConstraints="NO" id="PQ8-7h-hzj">
-                                        <frame key="frameInset" width="148" height="35"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-40" translatesAutoresizingMaskIntoConstraints="NO" id="PQ8-7h-hzj">
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIW-Z1-3sP" userLabel="first player button">
-                                                <frame key="frameInset" width="148" height="54"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIW-Z1-3sP" userLabel="first player button">
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="148" id="t5G-pA-uS7"/>
                                                     <constraint firstAttribute="height" constant="54" id="tbv-Cs-Cch"/>
@@ -143,8 +123,7 @@
                                                     <action selector="onFrstBtnPrsd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Djm-8o-WUa"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="ATTACK!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkX-g5-xe8" userLabel="first player button label">
-                                                <frame key="frameInset" minX="21" minY="14" width="105" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATTACK!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkX-g5-xe8" userLabel="first player button label">
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="9Wo-Gw-ZfU"/>
                                                     <constraint firstAttribute="width" constant="105" id="KMj-Db-yhl"/>
@@ -155,11 +134,9 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="-40" translatesAutoresizingMaskIntoConstraints="NO" id="F2X-gT-bbm">
-                                        <frame key="frameInset" minX="193" height="35"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-40" translatesAutoresizingMaskIntoConstraints="NO" id="F2X-gT-bbm">
                                         <subviews>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agE-cp-ocz" userLabel="start button">
-                                                <frame key="frameInset" minX="23" width="148"/>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agE-cp-ocz" userLabel="start button">
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="148" id="hag-Fg-SXs"/>
                                                     <constraint firstAttribute="height" constant="54" id="saH-0J-yrO"/>
@@ -169,8 +146,7 @@
                                                     <action selector="onStrtBtnPrsd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QU4-sS-mFy"/>
                                                 </connections>
                                             </button>
-                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="RESTART!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPe-nk-kIv" userLabel="start button label">
-                                                <frame key="frameInset" minX="45" width="105"/>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESTART!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPe-nk-kIv" userLabel="start button label">
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="105" id="2s0-f7-peX"/>
                                                     <constraint firstAttribute="height" constant="21" id="tA0-MP-JOn"/>
@@ -181,11 +157,9 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="-40" translatesAutoresizingMaskIntoConstraints="NO" id="AqT-gI-5ZU">
-                                        <frame key="frameInset" minX="238" width="148" height="35"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-40" translatesAutoresizingMaskIntoConstraints="NO" id="AqT-gI-5ZU">
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnu-H7-Ons" userLabel="second player button">
-                                                <frame key="frameInset" width="148" height="54"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnu-H7-Ons" userLabel="second player button">
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="54" id="FUg-ZC-uk8"/>
                                                     <constraint firstAttribute="width" constant="148" id="yEq-3Q-wXH"/>
@@ -195,8 +169,7 @@
                                                     <action selector="onScndBtnPrsd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S3T-n9-RjK"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="ATTACK!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUk-LW-d6Q" userLabel="second player button label">
-                                                <frame key="frameInset" minX="22" minY="14" width="105" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATTACK!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUk-LW-d6Q" userLabel="second player button label">
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="105" id="FaD-Ux-ONz"/>
                                                     <constraint firstAttribute="height" constant="21" id="KYM-0O-FVJ"/>
@@ -209,19 +182,15 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="-43" translatesAutoresizingMaskIntoConstraints="NO" id="FsP-9q-2Dh">
-                                <frame key="frameInset" minX="178" minY="28" width="329" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-43" translatesAutoresizingMaskIntoConstraints="NO" id="FsP-9q-2Dh">
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="text-holder" translatesAutoresizingMaskIntoConstraints="NO" id="fBe-wN-o0K">
-                                        <frame key="frameInset" width="329" height="56"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="text-holder" translatesAutoresizingMaskIntoConstraints="NO" id="fBe-wN-o0K">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="358" id="K9t-fy-9SW"/>
                                             <constraint firstAttribute="height" constant="56" id="Kaw-UZ-wPe"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Pick a character for Player 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvt-xE-IxR" userLabel="display label">
-                                        <frame key="frameInset" minY="13" width="329" height="28"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a character for Player 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvt-xE-IxR" userLabel="display label">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="28" id="9Uk-EU-oJM"/>
                                             <constraint firstAttribute="width" constant="329" id="o8u-tK-o21"/>
@@ -232,12 +201,9 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="165" translatesAutoresizingMaskIntoConstraints="NO" id="sIv-EW-zW1">
-                                <frame key="frameInset" minX="250" minY="211" width="315" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="165" translatesAutoresizingMaskIntoConstraints="NO" id="sIv-EW-zW1">
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="110 HP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTQ-b9-kZ8" userLabel="first player hp label">
-                                        <frame key="frameInset" width="75" height="29"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="110 HP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTQ-b9-kZ8" userLabel="first player hp label">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="29" id="SrV-3A-kYf"/>
                                             <constraint firstAttribute="width" constant="75" id="fJJ-PM-eaP"/>
@@ -246,8 +212,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="80 HP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOc-mN-Ifi" userLabel="second player hp label">
-                                        <frame key="frameInset" minX="240" width="75" height="29"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80 HP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOc-mN-Ifi" userLabel="second player hp label">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="75" id="KB7-Fj-fcz"/>
                                             <constraint firstAttribute="height" constant="35" id="fCz-r7-iKu"/>
@@ -258,61 +223,51 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" spacing="-100" translatesAutoresizingMaskIntoConstraints="NO" id="dQD-Cu-leU">
-                                <frame key="frameInset" minX="276" minY="329" width="460" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" spacing="-100" translatesAutoresizingMaskIntoConstraints="NO" id="dQD-Cu-leU">
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="2NZ-IP-IeN" userLabel="water_trolls">
-                                        <frame key="frameInset" width="145" height="77"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="2NZ-IP-IeN" userLabel="water_trolls">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="77" id="F3K-LK-G1t"/>
                                             <constraint firstAttribute="width" constant="145" id="dHN-8T-2sN"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="MBx-VT-n2A">
-                                        <frame key="frameInset" minX="45" width="145" height="77"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="MBx-VT-n2A">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="77" id="DhX-ZQ-N5Z"/>
                                             <constraint firstAttribute="width" constant="145" id="Fb6-a2-Yxt"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="Oxa-MP-MVc">
-                                        <frame key="frameInset" minX="90" width="145" height="77"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="Oxa-MP-MVc">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="77" id="R1W-Z5-7IM"/>
                                             <constraint firstAttribute="width" constant="145" id="iUK-SR-UNI"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="F7P-sN-ehN">
-                                        <frame key="frameInset" minX="135" width="145" height="77"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="F7P-sN-ehN">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="145" id="Ssj-qL-kNE"/>
                                             <constraint firstAttribute="height" constant="77" id="eCZ-AL-KvN"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="F7c-vU-rZn">
-                                        <frame key="frameInset" minX="180" width="145" height="77"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="F7c-vU-rZn">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="145" id="8UM-ZR-hXE"/>
                                             <constraint firstAttribute="height" constant="77" id="KWV-Kt-TfT"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="hQk-4n-o2E">
-                                        <frame key="frameInset" minX="225" width="145" height="77"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="hQk-4n-o2E">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="77" id="Glp-hW-Q0Q"/>
                                             <constraint firstAttribute="width" constant="145" id="XLo-Bv-sbX"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="Vkp-jt-BmH">
-                                        <frame key="frameInset" minX="270" width="145" height="77"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="Vkp-jt-BmH">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="145" id="jKL-W6-Hq1"/>
                                             <constraint firstAttribute="height" constant="77" id="ukk-sM-Ff9"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="RP5-fg-XW2">
-                                        <frame key="frameInset" minX="315" width="145" height="77"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="RP5-fg-XW2">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="145" id="lwI-PP-fWj"/>
                                             <constraint firstAttribute="height" constant="77" id="qfB-Tq-wop"/>
@@ -322,6 +277,33 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="FsP-9q-2Dh" secondAttribute="trailing" constant="209" id="0bb-6d-A4k"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dQD-Cu-leU" secondAttribute="bottom" constant="8" id="1Dd-V0-XSe"/>
+                            <constraint firstItem="nvh-bK-A9I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2ii-hM-0TL"/>
+                            <constraint firstAttribute="trailing" secondItem="nvh-bK-A9I" secondAttribute="trailing" id="4Ae-lK-vKL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jbG-fi-6sg" secondAttribute="bottom" id="7fC-6l-pRi"/>
+                            <constraint firstItem="lYD-gJ-SdZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="CX6-vw-TtP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lYD-gJ-SdZ" secondAttribute="bottom" constant="19" id="FlU-7F-Iem"/>
+                            <constraint firstItem="FsP-9q-2Dh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="HbG-Db-NGZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sIv-EW-zW1" secondAttribute="trailing" constant="151" id="Jsf-7m-q1c"/>
+                            <constraint firstItem="jbG-fi-6sg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-4" id="MKr-cR-Oki"/>
+                            <constraint firstItem="956-q2-5bs" firstAttribute="top" secondItem="FsP-9q-2Dh" secondAttribute="bottom" constant="53" id="NZe-Gt-r6U"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cYJ-A1-4do" secondAttribute="bottom" constant="67" id="Ogn-eO-rfH"/>
+                            <constraint firstItem="cYJ-A1-4do" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="230" id="Ykw-zQ-8lv"/>
+                            <constraint firstAttribute="trailing" secondItem="dQD-Cu-leU" secondAttribute="trailing" id="Z2p-3G-eDZ"/>
+                            <constraint firstItem="0nB-LW-Llr" firstAttribute="leading" secondItem="cYJ-A1-4do" secondAttribute="trailing" constant="34" id="Zu1-XM-2RW"/>
+                            <constraint firstItem="sIv-EW-zW1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="230" id="aBp-As-RdV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0nB-LW-Llr" secondAttribute="trailing" constant="50" id="dxS-Y3-mkt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nvh-bK-A9I" secondAttribute="bottom" id="faQ-6Z-B9k"/>
+                            <constraint firstItem="956-q2-5bs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="108" id="gAy-ep-KQw"/>
+                            <constraint firstItem="FsP-9q-2Dh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="158" id="l0J-OS-OqG"/>
+                            <constraint firstItem="nvh-bK-A9I" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="snI-f5-StL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="956-q2-5bs" secondAttribute="trailing" constant="54" id="uc8-30-DIx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0nB-LW-Llr" secondAttribute="bottom" constant="27" id="vXJ-2V-8ZC"/>
+                            <constraint firstItem="sIv-EW-zW1" firstAttribute="top" secondItem="956-q2-5bs" secondAttribute="bottom" constant="54" id="wOY-9M-Vjx"/>
+                            <constraint firstAttribute="trailing" secondItem="jbG-fi-6sg" secondAttribute="trailing" constant="-4" id="wao-1M-Bdl"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="displayLbl" destination="wvt-xE-IxR" id="7EX-YI-ee3"/>
