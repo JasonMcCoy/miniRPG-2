@@ -18,161 +18,310 @@
                         <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bg_bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="nvh-bK-A9I" userLabel="bg">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bg_bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="nvh-bK-A9I" userLabel="bg">
                                 <frame key="frameInset" width="736" height="414"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="414" id="bOf-47-Y99"/>
+                                    <constraint firstAttribute="width" constant="736" id="u1a-DT-L4t"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_bridge" translatesAutoresizingMaskIntoConstraints="NO" id="3bX-Ig-5us">
-                                <frame key="frameInset" minX="-4" minY="286" width="198" height="128"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="-16" translatesAutoresizingMaskIntoConstraints="NO" id="jbG-fi-6sg">
+                                <frame key="frameInset" minX="-4" minY="286" width="744" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_bridge" translatesAutoresizingMaskIntoConstraints="NO" id="ZtJ-Yh-f2w">
-                                <frame key="frameInset" minX="190" minY="286" width="198" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_bridge" translatesAutoresizingMaskIntoConstraints="NO" id="rC4-OS-Gro">
-                                <frame key="frameInset" minX="384" minY="286" width="198" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_bridge" translatesAutoresizingMaskIntoConstraints="NO" id="zOR-au-gy9">
-                                <frame key="frameInset" minX="578" minY="286" width="198" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="Pgl-ta-Ahg">
-                                <frame key="frameInset" minX="293" minY="277" width="129" height="82"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enemy" translatesAutoresizingMaskIntoConstraints="NO" id="yah-BZ-owS" userLabel="first player image">
-                                <frame key="frameInset" minX="132" minY="202" width="141" height="193"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="playeerr" translatesAutoresizingMaskIntoConstraints="NO" id="0nB-LW-Llr" userLabel="second player image">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bg_bridge" translatesAutoresizingMaskIntoConstraints="NO" id="3bX-Ig-5us">
+                                        <frame key="frameInset" width="198" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="DOP-0J-ce5"/>
+                                            <constraint firstAttribute="width" constant="198" id="hz0-Zv-sZh"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bg_bridge" translatesAutoresizingMaskIntoConstraints="NO" id="ZtJ-Yh-f2w">
+                                        <frame key="frameInset" minX="182" width="198" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="7Xw-IY-Dj3"/>
+                                            <constraint firstAttribute="width" constant="198" id="yCB-9M-rzK"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bg_bridge" translatesAutoresizingMaskIntoConstraints="NO" id="rC4-OS-Gro">
+                                        <frame key="frameInset" minX="364" width="198" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="198" id="FGq-xW-8eM"/>
+                                            <constraint firstAttribute="height" constant="128" id="UcC-LE-78J"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bg_bridge" translatesAutoresizingMaskIntoConstraints="NO" id="zOR-au-gy9">
+                                        <frame key="frameInset" minX="546" width="198" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="198" id="3F7-yg-xtK"/>
+                                            <constraint firstAttribute="height" constant="128" id="gUs-vv-qr3"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="playeerr" translatesAutoresizingMaskIntoConstraints="NO" id="0nB-LW-Llr" userLabel="second player image">
                                 <frame key="frameInset" minX="482" minY="188" width="184" height="199"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="199" id="d1S-r6-RnN"/>
+                                    <constraint firstAttribute="width" constant="184" id="gRi-jM-cGk"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enemy" translatesAutoresizingMaskIntoConstraints="NO" id="qoU-PQ-IS5" userLabel="first player image 2">
-                                <frame key="frameInset" minX="102" minY="352" width="31" height="43"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lYD-gJ-SdZ">
+                                <frame key="frameInset" minX="5" minY="202" width="272" height="193"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enemy" translatesAutoresizingMaskIntoConstraints="NO" id="HwB-yG-FUM" userLabel="first player image 3">
-                                <frame key="frameInset" minX="26" minY="285" width="79" height="110"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="Wyb-0b-AeJ">
+                                        <frame key="frameInset" width="272" height="193"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="enemy" translatesAutoresizingMaskIntoConstraints="NO" id="FBz-0j-Ism" userLabel="first player image 4">
+                                                <frame key="frameInset" minY="163" width="21" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="21" id="avB-e8-hHS"/>
+                                                    <constraint firstAttribute="height" constant="30" id="sTY-Si-slV"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="enemy" translatesAutoresizingMaskIntoConstraints="NO" id="HwB-yG-FUM" userLabel="first player image 3">
+                                                <frame key="frameInset" minX="21" minY="83" width="79" height="110"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="79" id="Qkk-10-JDB"/>
+                                                    <constraint firstAttribute="height" constant="110" id="Yjz-vK-1R2"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="enemy" translatesAutoresizingMaskIntoConstraints="NO" id="qoU-PQ-IS5" userLabel="first player image 2">
+                                                <frame key="frameInset" minX="100" minY="150" width="31" height="43"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="43" id="gwt-F6-yny"/>
+                                                    <constraint firstAttribute="width" constant="31" id="kh1-fY-1MO"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="enemy" translatesAutoresizingMaskIntoConstraints="NO" id="yah-BZ-owS" userLabel="first player image">
+                                                <frame key="frameInset" minX="131" width="141" height="193"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="193" id="Ran-D7-JF5"/>
+                                                    <constraint firstAttribute="width" constant="141" id="Y3Q-j5-6IA"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="cYJ-A1-4do">
+                                <frame key="frameInset" minX="250" minY="265" width="198" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enemy" translatesAutoresizingMaskIntoConstraints="NO" id="FBz-0j-Ism" userLabel="first player image 4">
-                                <frame key="frameInset" minX="5" minY="365" width="21" height="30"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="rX6-0K-NUH" userLabel="water_trolls">
+                                        <frame key="frameInset" width="69" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="69" id="f6W-LP-IiR"/>
+                                            <constraint firstAttribute="height" constant="44" id="rdY-Rx-fjr"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="Pgl-ta-Ahg">
+                                        <frame key="frameInset" minX="69" width="129" height="82"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="129" id="5DJ-Rf-JXE"/>
+                                            <constraint firstAttribute="height" constant="82" id="hw9-mH-BeF"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="956-q2-5bs">
+                                <frame key="frameInset" minX="128" minY="122" width="386" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="2NZ-IP-IeN" userLabel="water_trolls">
-                                <frame key="frameInset" minX="309" minY="329" width="145" height="77"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="-40" translatesAutoresizingMaskIntoConstraints="NO" id="PQ8-7h-hzj">
+                                        <frame key="frameInset" width="148" height="35"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIW-Z1-3sP" userLabel="first player button">
+                                                <frame key="frameInset" width="148" height="54"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="148" id="t5G-pA-uS7"/>
+                                                    <constraint firstAttribute="height" constant="54" id="tbv-Cs-Cch"/>
+                                                </constraints>
+                                                <state key="normal" image="player1attackdbtn"/>
+                                                <connections>
+                                                    <action selector="onFrstBtnPrsd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Djm-8o-WUa"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="ATTACK!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkX-g5-xe8" userLabel="first player button label">
+                                                <frame key="frameInset" minX="21" minY="14" width="105" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="9Wo-Gw-ZfU"/>
+                                                    <constraint firstAttribute="width" constant="105" id="KMj-Db-yhl"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="-40" translatesAutoresizingMaskIntoConstraints="NO" id="F2X-gT-bbm">
+                                        <frame key="frameInset" minX="193" height="35"/>
+                                        <subviews>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agE-cp-ocz" userLabel="start button">
+                                                <frame key="frameInset" minX="23" width="148"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="148" id="hag-Fg-SXs"/>
+                                                    <constraint firstAttribute="height" constant="54" id="saH-0J-yrO"/>
+                                                </constraints>
+                                                <state key="normal" image="player1attackdbtn"/>
+                                                <connections>
+                                                    <action selector="onStrtBtnPrsd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QU4-sS-mFy"/>
+                                                </connections>
+                                            </button>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="RESTART!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPe-nk-kIv" userLabel="start button label">
+                                                <frame key="frameInset" minX="45" width="105"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="105" id="2s0-f7-peX"/>
+                                                    <constraint firstAttribute="height" constant="21" id="tA0-MP-JOn"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="-40" translatesAutoresizingMaskIntoConstraints="NO" id="AqT-gI-5ZU">
+                                        <frame key="frameInset" minX="238" width="148" height="35"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnu-H7-Ons" userLabel="second player button">
+                                                <frame key="frameInset" width="148" height="54"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="54" id="FUg-ZC-uk8"/>
+                                                    <constraint firstAttribute="width" constant="148" id="yEq-3Q-wXH"/>
+                                                </constraints>
+                                                <state key="normal" image="player1attackbtn"/>
+                                                <connections>
+                                                    <action selector="onScndBtnPrsd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S3T-n9-RjK"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="ATTACK!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUk-LW-d6Q" userLabel="second player button label">
+                                                <frame key="frameInset" minX="22" minY="14" width="105" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="105" id="FaD-Ux-ONz"/>
+                                                    <constraint firstAttribute="height" constant="21" id="KYM-0O-FVJ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="-43" translatesAutoresizingMaskIntoConstraints="NO" id="FsP-9q-2Dh">
+                                <frame key="frameInset" minX="178" minY="28" width="329" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="rX6-0K-NUH" userLabel="water_trolls">
-                                <frame key="frameInset" minX="250" minY="265" width="69" height="44"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="text-holder" translatesAutoresizingMaskIntoConstraints="NO" id="fBe-wN-o0K">
+                                        <frame key="frameInset" width="329" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="358" id="K9t-fy-9SW"/>
+                                            <constraint firstAttribute="height" constant="56" id="Kaw-UZ-wPe"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Pick a character for Player 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvt-xE-IxR" userLabel="display label">
+                                        <frame key="frameInset" minY="13" width="329" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="9Uk-EU-oJM"/>
+                                            <constraint firstAttribute="width" constant="329" id="o8u-tK-o21"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="165" translatesAutoresizingMaskIntoConstraints="NO" id="sIv-EW-zW1">
+                                <frame key="frameInset" minX="250" minY="211" width="315" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="Oxa-MP-MVc">
-                                <frame key="frameInset" minX="425" minY="329" width="145" height="77"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="110 HP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTQ-b9-kZ8" userLabel="first player hp label">
+                                        <frame key="frameInset" width="75" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="29" id="SrV-3A-kYf"/>
+                                            <constraint firstAttribute="width" constant="75" id="fJJ-PM-eaP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="80 HP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOc-mN-Ifi" userLabel="second player hp label">
+                                        <frame key="frameInset" minX="240" width="75" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="KB7-Fj-fcz"/>
+                                            <constraint firstAttribute="height" constant="35" id="fCz-r7-iKu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" spacing="-100" translatesAutoresizingMaskIntoConstraints="NO" id="dQD-Cu-leU">
+                                <frame key="frameInset" minX="276" minY="329" width="460" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="Vkp-jt-BmH">
-                                <frame key="frameInset" minX="510" minY="337" width="145" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="hQk-4n-o2E">
-                                <frame key="frameInset" minX="462" minY="329" width="145" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="MBx-VT-n2A">
-                                <frame key="frameInset" minX="411" minY="326" width="145" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="F7c-vU-rZn">
-                                <frame key="frameInset" minX="453" minY="324" width="145" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="F7P-sN-ehN">
-                                <frame key="frameInset" minX="437" minY="315" width="145" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="RP5-fg-XW2">
-                                <frame key="frameInset" minX="510" minY="330" width="145" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnu-H7-Ons" userLabel="second player button">
-                                <frame key="frameInset" minX="515" minY="122" width="148" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="player1attackbtn"/>
-                                <connections>
-                                    <action selector="onScndBtnPrsd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S3T-n9-RjK"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIW-Z1-3sP" userLabel="first player button">
-                                <frame key="frameInset" minX="128" minY="122" width="148" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="player1attackdbtn"/>
-                                <connections>
-                                    <action selector="onFrstBtnPrsd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Djm-8o-WUa"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ATTACK!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkX-g5-xe8" userLabel="first player button label">
-                                <frame key="frameInset" minX="149" minY="136" width="105" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agE-cp-ocz" userLabel="start button">
-                                <frame key="frameInset" minX="315" minY="122" width="148" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="player1attackdbtn"/>
-                                <connections>
-                                    <action selector="onStrtBtnPrsd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QU4-sS-mFy"/>
-                                </connections>
-                            </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RESTART!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPe-nk-kIv" userLabel="start button label">
-                                <frame key="frameInset" minX="336" minY="136" width="105" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ATTACK!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUk-LW-d6Q" userLabel="second player button label">
-                                <frame key="frameInset" minX="537" minY="136" width="105" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="text-holder" translatesAutoresizingMaskIntoConstraints="NO" id="fBe-wN-o0K">
-                                <frame key="frameInset" minX="178" minY="28" width="358" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pick a character for Player 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvt-xE-IxR" userLabel="display label">
-                                <frame key="frameInset" minX="192" minY="43" width="329" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="110 HP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTQ-b9-kZ8" userLabel="first player hp label">
-                                <frame key="frameInset" minX="250" minY="211" width="75" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="80 HP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOc-mN-Ifi" userLabel="second player hp label">
-                                <frame key="frameInset" minX="481" minY="204" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="2NZ-IP-IeN" userLabel="water_trolls">
+                                        <frame key="frameInset" width="145" height="77"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="77" id="F3K-LK-G1t"/>
+                                            <constraint firstAttribute="width" constant="145" id="dHN-8T-2sN"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="MBx-VT-n2A">
+                                        <frame key="frameInset" minX="45" width="145" height="77"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="77" id="DhX-ZQ-N5Z"/>
+                                            <constraint firstAttribute="width" constant="145" id="Fb6-a2-Yxt"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="Oxa-MP-MVc">
+                                        <frame key="frameInset" minX="90" width="145" height="77"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="77" id="R1W-Z5-7IM"/>
+                                            <constraint firstAttribute="width" constant="145" id="iUK-SR-UNI"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="F7P-sN-ehN">
+                                        <frame key="frameInset" minX="135" width="145" height="77"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="145" id="Ssj-qL-kNE"/>
+                                            <constraint firstAttribute="height" constant="77" id="eCZ-AL-KvN"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="F7c-vU-rZn">
+                                        <frame key="frameInset" minX="180" width="145" height="77"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="145" id="8UM-ZR-hXE"/>
+                                            <constraint firstAttribute="height" constant="77" id="KWV-Kt-TfT"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="hQk-4n-o2E">
+                                        <frame key="frameInset" minX="225" width="145" height="77"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="77" id="Glp-hW-Q0Q"/>
+                                            <constraint firstAttribute="width" constant="145" id="XLo-Bv-sbX"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="Vkp-jt-BmH">
+                                        <frame key="frameInset" minX="270" width="145" height="77"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="145" id="jKL-W6-Hq1"/>
+                                            <constraint firstAttribute="height" constant="77" id="ukk-sM-Ff9"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bridge_trolls" translatesAutoresizingMaskIntoConstraints="NO" id="RP5-fg-XW2">
+                                        <frame key="frameInset" minX="315" width="145" height="77"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="145" id="lwI-PP-fWj"/>
+                                            <constraint firstAttribute="height" constant="77" id="qfB-Tq-wop"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="nvh-bK-A9I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nDi-0L-r8o"/>
-                            <constraint firstItem="nvh-bK-A9I" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nrr-Zm-V8t"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="displayLbl" destination="wvt-xE-IxR" id="7EX-YI-ee3"/>
